@@ -4,7 +4,7 @@ import Skill from "./components/skill";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
-import ContactUs from "./components/Contact";
+import ContactUs from "../public/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import MagicCursor from "./components/MagicCursor"; // ✅ Import Magic Cursor

@@ -5,8 +5,8 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background: linear-gradient(to right, #ffedf3, #f4d1ff); /* Light pink & soft purple */
-  color: #333;
+  background: linear-gradient(to right, #ffedf3, #f4d1ff);
+  color: #fff;
 }
 
 h2 {

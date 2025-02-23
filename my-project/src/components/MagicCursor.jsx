@@ -10,7 +10,7 @@ const MagicCursor = () => {
     const moveCursor = (e) => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
 
-      // Detect elements with the "hover-effect" class
+    
       const hovered = e.target.closest(".hover-effect");
       setIsHovering(!!hovered);
       setHoveredElement(hovered);
@@ -26,7 +26,7 @@ const MagicCursor = () => {
 
       setTimeout(() => {
         hoveredElement.classList.remove("shake-effect");
-      }, 500); // Shake lasts for 0.5 seconds
+      }, 500); 
     }
   }, [hoveredElement]);
 

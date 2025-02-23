@@ -13,7 +13,6 @@ import { AiOutlineInstagram, AiOutlineLineChart, AiOutlineBarChart } from "react
 import { FaFacebookSquare, FaGoogle, FaChartPie, FaMobileAlt, FaLaravel } from "react-icons/fa";
 import Reveal from "./Reveal";
 
-// Skill categories
 const skills = [
   {
     category: "Frontend Development",
@@ -31,7 +30,7 @@ const skills = [
     technologies: [
       { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" /> },
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
-      { name: "Laravel", icon: <FaLaravel className="text-red-600" /> }, // ✅ Laravel added
+      { name: "Laravel", icon: <FaLaravel className="text-red-600" /> }, 
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
     ],
   },
@@ -57,7 +56,7 @@ const Skill = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 md:px-12 py-12" id="skill">
       <Reveal>
-        {/* Section Heading */}
+       
         <h2 className="text-4xl font-bold text-center text-white mb-6">My Skills</h2>
         <p className="text-center text-lg text-pink-400 mb-12">
           I specialize in Frontend Development, Fullstack, Social Media Growth, Digital Marketing, and Data Analysis.

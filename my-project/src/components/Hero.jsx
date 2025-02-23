@@ -81,7 +81,7 @@ const Hero = () => {
           >
             
             <div className="flex flex-col sm:flex-row items-center gap-6 my-4 md:mb-0">
-  {/* 🔹 Hire Me Button (Scrolls to Contact Section) */}
+
   <button
   onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
   className="z-10 cursor-pointer font-bold text-white bg-gradient-to-r from-purple-600 to-pink-500 px-6 py-3 rounded-xl w-full sm:w-auto text-lg hover-effect"

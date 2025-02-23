@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import Reveal from "./Reveal";
-import { projectCategories } from "./Portfolio"; // ✅ Importing project categories correctly
+import Reveal from "../src/components/Reveal";
+import { projectCategories } from "../src/components/Portfolio"; // ✅ Importing project categories correctly
 
 // Dynamic Stats Data
 const stats = [
