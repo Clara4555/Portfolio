@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from "../assets/Images/clara.jpg";
+import profilepic from "../assets/Images/WhatsApp Image 2025-03-18 at 21.09.05_d2bcb7f8.jpg";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import { Link } from "react-scroll";

@@ -4,16 +4,16 @@ import Skill from "./components/skill";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
-import ContactUs from "../public/Contact";
+import ContactUs from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import MagicCursor from "./components/MagicCursor"; // ✅ Import Magic Cursor
+import MagicCursor from "./components/MagicCursor"; 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <MagicCursor /> {/* ✅ Cursor Effect Only */}
+        <MagicCursor /> 
         <Navbar />
         <Hero />
         <Skill />

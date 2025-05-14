@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import Reveal from "../src/components/Reveal";
-import { projectCategories } from "../src/components/Portfolio"; // ✅ Importing project categories correctly
+import Reveal from "./Reveal";
+import { projectCategories } from "./Portfolio"; 
 
-// Dynamic Stats Data
+
 const stats = [
   { label: "Projects Completed", key: "projects", suffix: "+", dynamic: true },
   { label: "Years of Experience", key: "experience", suffix: "+", value: 2 },
@@ -22,7 +22,7 @@ const Contact = () => {
     <div className="px-6 max-w-[1000px] mx-auto md:my-16" id="contact">
       <Reveal>
         <div className="grid md:grid-cols-2 place-items-center gap-12">
-          {/* About Me Section */}
+     
           <div className="text-white">
             <h3 className="text-4xl font-semibold mb-5 text-center md:text-left">
               About <span className="text-purple-400">Me</span>
@@ -33,7 +33,6 @@ const Contact = () => {
               My work bridges technology and user experience, delivering seamless and engaging solutions.
             </p>
 
-            {/* Stats Section with Animated Counting */}
             <div className="flex mt-10 items-center justify-center md:justify-start gap-8 flex-wrap">
               {stats.map((stat, index) => (
                 <AnimatedStat key={index} stat={stat} index={index} projectCount={projectCount} />
@@ -41,7 +40,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+         
           <form
             action="https://getform.io/f/bllyynnb"
             method="POST"
@@ -87,7 +86,7 @@ const Contact = () => {
               Send Message
             </button>
 
-            {/* Social Links */}
+        
             <div className="flex justify-center gap-6 mt-6">
               <a href="https://www.linkedin.com/in/techyfavour/" target="_blank" rel="noopener noreferrer">
                 <AiFillLinkedin size={32} className="text-purple-400 hover:text-purple-600 transition-all" />
@@ -103,15 +102,15 @@ const Contact = () => {
   );
 };
 
-// ✅ **Animated Stat Component (Now Handles Dynamic Project Count)**
+
 const AnimatedStat = ({ stat, index, projectCount }) => {
   const [count, setCount] = useState(0);
-  const finalValue = stat.dynamic ? projectCount : stat.value; // ✅ Get dynamic project count
+  const finalValue = stat.dynamic ? projectCount : stat.value; 
 
   useEffect(() => {
     let start = 0;
     const end = finalValue || 0;
-    const duration = 2000; // 2 seconds
+    const duration = 2000; 
     const intervalTime = Math.floor(duration / (end || 1));
 
     const timer = setInterval(() => {
