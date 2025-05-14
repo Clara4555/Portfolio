@@ -29,7 +29,7 @@ const Contact = () => {
             </h3>
             <p className="leading-7 text-white md:text-lg text-center md:text-left">
               I am a passionate software engineer with expertise in Frontend Development, UI/UX Design, and Backend Engineering.
-              With hands-on experience at **EduSchola, Scholarly, and NIIT Ajah**, I specialize in crafting dynamic web applications and managing digital brand strategies.
+              With hands-on experience at EduSchola, Scholarly, and NIIT Ajah, I specialize in crafting dynamic web applications and managing digital brand strategies.
               My work bridges technology and user experience, delivering seamless and engaging solutions.
             </p>
 
